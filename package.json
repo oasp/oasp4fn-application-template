@@ -6,6 +6,7 @@
   "scripts": {
     "fun": "fun",
     "start": "tsc && webpack && node ./.webpack/handlers/app",
+    "start:ts": "nodemon --watch handlers/**/*.ts --ignore handlers/**/*.spec.ts --exec ts-node handlers/app.ts",
     "build": "tsc && webpack",
     "offline": "sls offline --location .webpack",
     "test": "mocha --opts mocha.opts",

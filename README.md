@@ -12,13 +12,7 @@ or
 
 Although, for the environment to work properly, some packages have to be installed globally, so you have to execute these commands next:
 
-    $ npm install -g mocha
-
-    $ npm install -g ts-node
-
-    $ npm install -g typescript
-
-    $ npm install -g serverless
+    $ npm install -g typescript ts-node mocha serverless nodemon
 
 ## Execution
 
@@ -42,15 +36,19 @@ To build the typescript sources only is necessary to run:
 
 ### Start
 
-To start the service locally there are two possibilities:
+To start the service locally there are three possibilities:
 
 1. Use the plugin serverless-offline (Recommended):
 
     $ npm run offline
 
-2. Use the generated app.ts (only if you execute ```npm run fun -- -e``` in the previous step:
+2. Use the generated app.ts _transpiled_ (only if you execute ```npm run fun -- -e``` in the previous step:
 
     $ npm run start
+
+3. Use the generated app.ts with *ts-node* and watching changes in your handlers (only if you execute ```npm run fun -- -e``` in the previous step:
+
+    $ npm run start:ts
 
 ### Testing
 
