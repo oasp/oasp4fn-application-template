@@ -50,11 +50,7 @@ interface S3Info {
     s3SchemaVersion: string; 
 }
 
-export interface Visitor {
-    name: string;
-    email: string;
-    phone: string;
-} 
-
-
-
+export interface Login {
+    user: string;
+    password: string;
+}
