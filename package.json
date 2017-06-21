@@ -6,6 +6,7 @@
   "scripts": {
     "fun": "fun",
     "start": "tsc && webpack && node ./.webpack/handlers/app",
+    "start:ts": "nodemon --watch handlers/**/*.ts --ignore handlers/**/*.spec.ts --exec ts-node handlers/app.ts",
     "build": "tsc && webpack",
     "offline": "sls offline --location .webpack",
     "test": "mocha --opts mocha.opts",
@@ -20,6 +21,8 @@
     "@types/body-parser": "^1.16.3",
     "@types/chai": "^3.4.34",
     "@types/cors": "^2.8.1",
+    "@types/express": "4.0.35",
+    "@types/express-serve-static-core": "4.0.46",
     "@types/lodash": "^4.14.64",
     "@types/mocha": "^2.2.38",
     "@types/node": "^7.0.0",

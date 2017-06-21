@@ -53,6 +53,11 @@ jspm_packages
 # Webpack
 .webpack
 
+# OASP4Fn generated files
+handlers/app.ts
+webpack.config.js
+serverless.yml
+
 ###################################
 
 # Visual Studio 2015 cache/options directory
