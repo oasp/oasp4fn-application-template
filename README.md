@@ -40,15 +40,21 @@ To start the service locally there are three possibilities:
 
 1. Use the plugin serverless-offline (Recommended):
 
-    $ npm run offline
+```bash
+$ npm run offline
+```
 
 2. Use the generated app.ts _transpiled_ (only if you execute ```npm run fun -- -e``` in the previous step:
 
-    $ npm run start
+```bash
+$ npm run start
+```
 
 3. Use the generated app.ts with *ts-node* and watching changes in your handlers (only if you execute ```npm run fun -- -e``` in the previous step:
 
-    $ npm run start:ts
+```bash
+$ npm run start:ts
+```
 
 ### Testing
 
