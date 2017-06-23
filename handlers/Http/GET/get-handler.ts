@@ -3,5 +3,5 @@ import { HttpEvent, Context } from '../../types';
 
 oasp4fn.config({path: 'your_get_path'});
 export async function getTemplate (event: HttpEvent, context: Context, callback: Function) {
-  
+
 }
